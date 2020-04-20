@@ -51,8 +51,9 @@ body{
 
 .images{
     background-color: darkgray;
+    justify-content: center;
     text-align: center;
-    padding: 86px;
+    padding: 1%;
 }
 
 .links{
@@ -79,7 +80,30 @@ body{
 .image{
     display: inline-block;
     text-align: center;
-    padding: 14px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#lightbox{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 70%;
+    background-color: black;
 }
 
 #top{
