@@ -51,6 +51,7 @@ body{
 
 .images{
     background-color: darkgray;
+    text-align: center;
     padding: 86px;
 }
 
@@ -81,6 +82,23 @@ body{
     padding: 14px;
 }
 
+#top{
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    color: #222222;
+    position: fixed;
+    bottom: 40px;
+    right: 5%;
+    z-index: 100;
+    padding: 10px;
+    font-size: calc(4px +.8vw);
+}
+
+#top:hover{
+    background-color: #555;
+}
 
 
 
